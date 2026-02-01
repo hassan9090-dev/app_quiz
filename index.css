@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import local font */
+/* Note: @fontsource/inter must be imported in JS/TS entry point for Vite to bundle it, 
+   but we can also use CSS import if configured. 
+   Here we trust the JS import in index.tsx to load the font and just set the family. */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode overrides if needed (though we switched to light) */
+@media (prefers-color-scheme: dark) {
+    /* Optional: keep some dark mode logic if the OS is dark, 
+       but we are enforcing light theme for now as per request. */
+}
