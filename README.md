@@ -32,13 +32,13 @@ A modern, real-time interactive quiz application built with **React**, **Socket.
    ```
 
 3. **Running the application**:
-   - Start the development server (Frontend):
-     ```bash
-     npm run dev
-     ```
    - Start the Socket.io server (Backend):
      ```bash
      npm start
+     ```
+   - Start the development server (Frontend):
+     ```bash
+     npm run dev -- --host 0.0.0.0 --port 5000
      ```
    *Alternatively, you can run `execute.bat` on Windows to start both automatically.*
 
