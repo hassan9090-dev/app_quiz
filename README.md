@@ -1,20 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🎓 Interactive Quiz Application
 
-# Run and deploy your AI Studio app
+A modern, real-time interactive quiz application built with **React**, **Socket.io**, and **Tailwind CSS**. Designed for teachers to host live sessions and students to participate from any device.
 
-This contains everything you need to run your app locally.
+## ✨ Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1S-BnLnMa_eW6iooO_522gPrd151lFGgx
+- **Live Quiz Sessions**: Real-time interaction between teacher and students.
+- **Teacher Dashboard**: Create, edit, and manage quizzes with ease.
+- **Student Join**: Simple join process via code or QR code.
+- **Real-time Leaderboard**: Instant feedback and scoring.
+- **Offline First**: Local storage using IndexedDB for quiz persistence.
+- **Responsive Design**: Beautiful UI that works on desktops, tablets, and phones.
 
-## Run Locally
+## 🚀 Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone <your-repository-url>
+   cd app_quiz
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Running the application**:
+   - Start the development server (Frontend):
+     ```bash
+     npm run dev
+     ```
+   - Start the Socket.io server (Backend):
+     ```bash
+     npm start
+     ```
+   *Alternatively, you can run `execute.bat` on Windows to start both automatically.*
+
+## 🛠️ Technology Stack
+
+- **Frontend**: React, TypeScript, Vite, Tailwind CSS, Lucide Icons.
+- **Backend**: Node.js, Express, Socket.io.
+- **Storage**: IndexedDB (via `idb` library).
+- **Communication**: WebSockets for real-time state synchronization.
+
+## 📝 License
+
+This project is open-source and available under the MIT License.
