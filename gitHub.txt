@@ -1,0 +1,10 @@
+To finish putting the project on GitHub:
+
+Create a new repository on github.com.
+Open a terminal in the project directory (e:\projets\app_quiz).
+Run the following commands:
+git add .
+git commit -m "Initial commit: Prepare for GitHub"
+git remote add origin <your-github-repo-url>
+git branch -M main
+git push -u origin main
